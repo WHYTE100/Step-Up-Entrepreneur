@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.pride.stepupentrepreneurprototype.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_entrepreneurHomeFragment"
+            app:destination="@id/entrepreneurHomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_bankHomeFragment"
+            app:destination="@id/bankHomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_investorFragment"
+            app:destination="@id/investorFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_addEntrepreneurDetailsFragment"
+            app:destination="@id/addEntrepreneurDetailsFragment" />
+        <action
+            android:id="@+id/action_loginFragment_self"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_addEntrepreneurImageFragment"
+            app:destination="@id/addEntrepreneurImageFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_entrepreneurMainActivity"
+            app:destination="@id/entrepreneurMainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.pride.stepupentrepreneurprototype.fragments.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_entrepreneurHomeFragment"
+            app:destination="@id/entrepreneurHomeFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_userTypeFragment"
+            app:destination="@id/userTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entrepreneurHomeFragment"
+        android:name="com.pride.stepupentrepreneurprototype.fragments.EntrepreneurMainFragment"
+        android:label="fragment_entreprenuer_home"
+        tools:layout="@layout/fragment_entreprenuer_home" >
+        <action
+            android:id="@+id/action_entrepreneurHomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankHomeFragment"
+        android:name="com.pride.stepupentrepreneurprototype.fragments.BankHomeFragment"
+        android:label="fragment_bank_home"
+        tools:layout="@layout/fragment_bank_home" >
+        <action
+            android:id="@+id/action_bankHomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/investorFragment"
+        android:name="com.pride.stepupentrepreneurprototype.fragments.InvestorFragment"
+        android:label="fragment_investor"
+        tools:layout="@layout/fragment_investor" >
+        <action
+            android:id="@+id/action_investorFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userTypeFragment"
+        android:name="com.pride.stepupentrepreneurprototype.fragments.UserTypeFragment"
+        android:label="fragment_user_type"
+        tools:layout="@layout/fragment_user_type" >
+        <action
+            android:id="@+id/action_userTypeFragment_to_entrepreneurHomeFragment"
+            app:destination="@id/entrepreneurHomeFragment" />
+        <action
+            android:id="@+id/action_userTypeFragment_to_investorFragment"
+            app:destination="@id/investorFragment" />
+        <action
+            android:id="@+id/action_userTypeFragment_to_bankHomeFragment"
+            app:destination="@id/bankHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEntrepreneurDetailsFragment"
+        android:name="com.pride.stepupentrepreneurprototype.fragments.AddEntrepreneurDetailsFragment"
+        android:label="fragment_add_entrepreneur_details"
+        tools:layout="@layout/fragment_add_entrepreneur_details" >
+        <action
+            android:id="@+id/action_addEntrepreneurDetailsFragment_to_addEntrepreneurImageFragment"
+            app:destination="@id/addEntrepreneurImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEntrepreneurVerificationIdFragment"
+        android:name="com.pride.stepupentrepreneurprototype.fragments.AddEntrepreneurVerificationIdFragment"
+        android:label="fragment_add_entrepreneur_verification_id"
+        tools:layout="@layout/fragment_add_entrepreneur_verification_id" >
+        <action
+            android:id="@+id/action_addEntrepreneurVerificationIdFragment_to_entrepreneurHomeFragment"
+            app:destination="@id/entrepreneurHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEntrepreneurImageFragment"
+        android:name="com.pride.stepupentrepreneurprototype.fragments.AddEntrepreneurImageFragment"
+        android:label="fragment_add_entrepreneur_image"
+        tools:layout="@layout/fragment_add_entrepreneur_image" >
+        <action
+            android:id="@+id/action_addEntrepreneurImageFragment_to_addEntrepreneurVerificationIdFragment"
+            app:destination="@id/addEntrepreneurVerificationIdFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/entrepreneurMainActivity"
+        android:name="com.pride.stepupentrepreneurprototype.EntrepreneurMainActivity"
+        android:label="activity_entrepreneur_main"
+        tools:layout="@layout/activity_entrepreneur_main" />
+</navigation>

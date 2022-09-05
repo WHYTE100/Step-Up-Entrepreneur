@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "826003974793",
+    "project_id": "stepup-entrepreneur",
+    "storage_bucket": "stepup-entrepreneur.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826003974793:android:fcc0a20dd2d94e1a0df458",
+        "android_client_info": {
+          "package_name": "com.pride.stepupentrepreneurprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826003974793-qedgfcob7akaafgesj1kuseo35sbhn9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1-R-chOoiT6sx7CKaBfmt5zZfEsZOVSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826003974793-qedgfcob7akaafgesj1kuseo35sbhn9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
